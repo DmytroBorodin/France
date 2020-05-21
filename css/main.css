@@ -18,6 +18,9 @@ ul{
 }
 body{
 	background-color: #171E38;
+	color: #FFFFFF;
+	font-family: Lato;
+	font-weight: bold;
 }
 .wrap{
 	width: 100%;
@@ -32,7 +35,30 @@ body{
 .container{
 	display: flex;
 }
-
+.small__text {
+	font-size: 1.2rem;
+	line-height: 1.4rem;
+}
+.grey__text__06{
+	color: rgba(255, 255, 255, 0.6);
+}
+.middle-size__text{
+	font-size: 2.3rem;
+	line-height: 2.8rem;
+}
+.big-size__text{
+	font-size: 40px;
+	line-height: 48px;
+}
+.block__bg{
+	background-color: #212840;
+}
+.right-align__text{
+	text-align: right;
+}
+.green__text{
+	color: #2ED535;;
+}
 /* Header */
 
 header{
@@ -79,7 +105,6 @@ header .wrap{
 	line-height: 3rem;
 	font-family: lato;
 	font-weight: bold;
-	color: #fff;
 }
 .right-side {
 	display: flex;
@@ -96,7 +121,6 @@ header .wrap{
 }
 .menu__link {
 	color: #637280;
-	font-family: Lato;
 	font-size: 1.6rem;
 	font-weight: normal;
 	line-height: 1.9rem;
@@ -112,7 +136,6 @@ header .wrap{
 	display: flex;
 	width: 22.17%;
 	border-bottom: 1px solid #707070;
-	color: #fff;
 	padding-bottom: 0.5rem;
 	justify-content: space-between;
 }
@@ -124,9 +147,9 @@ header .wrap{
 	width: 89%;
 	border: none;
 	background: transparent;
+	font-size: 1.2rem;
+	font-weight: normal;
 	color: #fff;
-	font-size: 1rem;
-	font-family: lato;
 }
 .search__input:focus{
 	outline: none;
@@ -135,13 +158,11 @@ header .wrap{
 
 
 /* Sidebar */
-.wrap {}
 .sidebar {
 	width: 6.25%;
 	background-color: #212840;
 	padding-top: 6.9rem;
 }
-.buttons {}
 .button__block {
 	width: 100%;
 	display: flex;
@@ -190,7 +211,6 @@ header .wrap{
 	line-height: 4.1rem;
 	font-family: Roboto;
 	font-weight: bold;
-	color: #fff;
 }
 .flag {
 	align-self: center;
@@ -204,7 +224,6 @@ header .wrap{
 	font-family: Roboto;
 	font-weight: normal;
 }
-.container {}
 .header__map__block {
 	width: 24.09%;
 }
@@ -224,7 +243,6 @@ header .wrap{
 	font-weight: normal;
 	font-size: 1.6rem;
 	margin-bottom: 3.8rem;
-	color: #fff;
 }
 .main__info p { 
 	line-height: 1.9rem;
@@ -234,7 +252,6 @@ header .wrap{
 	font-style: normal;
 	font-weight: normal;
 	font-size: 1.6rem;
-	color: #fff;
 	width: 88.7%;
 }
 .header__text p{
@@ -249,7 +266,6 @@ header .wrap{
 	font-weight: normal;
 	font-size: 3rem;
 	text-align: right;
-	color: #fff;
 }
 .time__info {
 	line-height: 3.7rem;
@@ -266,6 +282,10 @@ header .wrap{
 	width: 14.3%;
 }
 /* right sidebar */
+.twitter{
+	margin-top: 4.45rem;
+	width: 100%;
+}
 .right-sidebar__title__block {
 	display: flex;
 	align-items: center;
@@ -275,25 +295,27 @@ header .wrap{
 	margin-right: 1.45rem;
 }
 .right-sidebar__title {
-	font-family: Lato;
 	font-style: normal;
-	font-weight: bold;
-	font-size: 2.3rem;
-	line-height: 2.8rem;
-	color: #fff;
+	color: #F2F2F2;
 }
-.twitter__posts__block {
+.posts__block {
 	padding: 0.9rem 0.6rem 0 0.7rem;
 	background-color: #212840;
+	padding-bottom: 3rem;
 }
-.twitter__post__block {
+.post__block {
 	background-color: #171E38;
 	padding: 1.3rem 0.9rem 0 0.3rem;
 	display: flex;
 	justify-content: space-between;
+	margin-bottom: 3rem;
+}
+.post__block:last-child {
+	margin-bottom: 0;
 }
 .avatar__block {
 	width: 4.16rem;
+	padding: 0 0.5rem;
 }
 .avatar__block img{
 	width: 100%;
@@ -302,12 +324,113 @@ header .wrap{
 .post__info {
 	width: 76%;
 }
-.user__name {}
-.user__contact {}
-.post__text {}
+.user__name {
+	font-style: normal;
+	font-size: 1.6rem;
+	line-height: 1.9rem;
+}
+.post__text {
+	margin-top: 1.4rem;
+	margin-bottom: 0.4rem;
+}
+.when-added{
+	text-align: right;
+	margin-bottom: 2.7rem;
+}
+.google{
+	margin-top: 8.05rem;
+	width: 100%;
+}
+.google__post__info{
+	position: relative;
+	margin-left: 0.5rem;
+}
+.google__pos__text{
+	position: absolute;
+	bottom: 4.2rem;
+	left: -3.66rem;
+}
+.google__avatar__block img{
+	border-radius: 0;
+}
+.google__post__text{
+	margin-top: 0;
+}
+.when-added__google{
+	margin-top: 3.3rem;
+}
+/* right sidebar */
 
+/* Inner-main sections */
 
+/* Demography */
+.demography {
+	margin-top: 4.3rem;
+}
+.section__info__block {
+	width: 32.06%;
+	margin-right: 2.2rem;
+	padding: 2rem 3.2rem;
+}
+.info-icon__block {
+	width: 6rem;
+	height: 6rem;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 3rem;
+	margin: 0.3rem 0 1.4rem 0;
+	background-color: rgba(255, 255, 255, 0.13);
 
+}
+.inner__info__block {
+	display: flex;
+	position: relative;
+	width: 17.9rem;
+	margin: 1.2rem 0 4.3rem;
+}
+.demography .section__info__block .big-size__text {
+	width: 12.3rem;
+}
+
+.inner__info__block .percentages {
+	position: absolute;
+	right: 0;
+	bottom: 0.65rem;
+}
+.section__chart__block {
+	width: calc(100% - 32.06% - 2.2rem);
+	padding: 1.7rem 3.2rem 2rem;
+
+}
+.chart-header__block {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 2.5rem;
+}
+.chart-header__block .left-side {
+	display: flex;
+	align-items: center;
+}
+.left-side .info-icon__block {
+	width: 3rem;
+	height: 3rem;
+	font-size: 1.5rem;
+	margin: 0 1.5rem 0 0;
+}
+.chart-header__block .right-side {
+	display: flex;
+	justify-content: flex-end;
+}
+.chart__div{
+	height: 187px;
+	margin-bottom: 3.1rem;
+}
+#demography__chart{
+	width: 100%;
+}
 
 
 
